@@ -10,17 +10,17 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        var movie = new Movie
-        {
-            Title = "Hi",
-            ReleaseDate = DateTime.Now,
-            Category = null,
-            Evaluation = 10,
-            Price = 20000
-        };
+        //var movie = new Movie
+        //{
+        //    Title = "Hi",
+        //    ReleaseDate = DateTime.Now,
+        //    Category = null,
+        //    Evaluation = 10,
+        //    Price = 20000
+        //};
 
-        return RedirectToAction("Privacy", movie);
-        //return View();
+        //return RedirectToAction("Privacy", movie);
+        return View();
     }
 
     public IActionResult Privacy(Movie movie)
